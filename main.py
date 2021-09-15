@@ -1,7 +1,6 @@
 
 # Importing required modules
 from tkinter import *   
-
 import tkinter as tk
 import tkinter.scrolledtext as st
   
@@ -39,8 +38,8 @@ with open(filename) as file_object:
 for line in lines:
     text += line
 
-print(text)
-# Inserting Text which is read only
+# print(text)
+
 text_area.insert(tk.INSERT,text, ("centered",))
 text_area.tag_configure("centered", justify="center")
 
